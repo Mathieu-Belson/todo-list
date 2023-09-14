@@ -4,3 +4,23 @@
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
 }
+.container{
+    width: 100%;
+    min-height: 100vh;  
+    background: linear-gradient(135deg, hsl(204, 70%, 67%), #9b59b6);
+    padding: 10px;
+}
+.todo-app{
+    width:100%;
+    max-width: 540px;
+    background: #fff;   
+    margin: 100px auto 20px; /* top, left&right auto, bottom */
+    padding: 40px 30px 70px; /* top, left&right, bottom */
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex; /* to align the icon and text */
+    align-items: center;
+    margin-bottom: 20px;
+}
