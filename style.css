@@ -37,7 +37,7 @@
     padding-left: 20px;
     margin-bottom: 25px
 }
- input {
+input {
     flex: 1; /*it will take the remaining space */
     border: none;
     outline: none;
@@ -45,7 +45,7 @@
     padding: 10px;
     font-weight: 14px;
 }
- button {
+button {
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -55,3 +55,10 @@
     cursor: pointer; /* to change the cursor to pointer */
     border-radius: 40px;
 } 
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px; /* top, right, bottom, left */
+    user-select: none; /* to disable the text selection */
+    cursor: pointer; /* hand cursor. The other types of cursor are auto, crosshair, default, help, move, pointer, progress, text, wait, inherit */
+}
