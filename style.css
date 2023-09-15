@@ -61,4 +61,25 @@ ul li {
     padding: 12px 8px 12px 50px; /* top, right, bottom, left */
     user-select: none; /* to disable the text selection */
     cursor: pointer; /* hand cursor. The other types of cursor are auto, crosshair, default, help, move, pointer, progress, text, wait, inherit */
+    position: relative; /* to position the checkbox */
+}
+ul li::before {  /* ::before is a pseudo-element which allows you to insert content onto a page from CSS (without it needing to be in the HTML). */
+    content: ''; /* ' ' is used to insert a space */
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center; 
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
 }
