@@ -28,8 +28,8 @@
     width: 30px;
     margin-left: 10px;
 }
-.row{
-    diplay: flex; 
+.row { /* to align the input and button */
+    display: flex; 
     align-items: center;
     justify-content: space-between;
     background: #edeef0;
@@ -37,3 +37,21 @@
     padding-left: 20px;
     margin-bottom: 25px
 }
+ input {
+    flex: 1; /*it will take the remaining space */
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+ button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer; /* to change the cursor to pointer */
+    border-radius: 40px;
+} 
