@@ -19,15 +19,18 @@ function addTask() {
 listContainer.addEventListener("click", function(e){
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
+        saveData();
     }
     else if (e.target.tagName === "SPAN") {
         e.target.parentElement.remove();
+        saveData();
     }
 }, false);
 
 function saveData() {
     localStorage.setItem("data", listContainer.innerHTML); /* setItem is used to store data in the localStorage of the browser */ 
 }
+
 function showTask() {
     listContainer.innerHTML = localStorage.getItem("data"); /* getItem is used to retrieve data from the localStorage of the browser */
 }
