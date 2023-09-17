@@ -56,7 +56,8 @@ button {
     border-radius: 40px;
 } 
 button:hover {
-    background: #f79a0f;
+    background: #ff5945;
+    opacity: 0.6;
     transition: 0.2s ease-in-out;
    
 }
