@@ -55,6 +55,11 @@ button {
     cursor: pointer; /* to change the cursor to pointer */
     border-radius: 40px;
 } 
+button:hover {
+    background: #f79a0f;
+    transition: 0.2s ease-in-out;
+   
+}
 ul li {
     list-style: none;
     font-size: 17px;
@@ -92,10 +97,11 @@ ul li span {
     font-size: 22px;
     color: #555;
     line-height: 40px;
-    text-align: center;
+    text-align: center; 
 }
 ul li span:hover {
  background: #edeef0;
  border-radius: 50%;
+ transition: 0.2s ease-in-out;
 
 }

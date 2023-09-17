@@ -14,5 +14,4 @@ function addTask() {
         li.appendChild(span);
     }
     inputBox.value = ""; /* clear the input box after adding the task */
-
 }
