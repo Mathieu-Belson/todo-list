@@ -14,6 +14,7 @@ function addTask() {
         li.appendChild(span);
     }
     inputBox.value = ""; /* clear the input box after adding the task */
+    saveData();
 }
 listContainer.addEventListener("click", function(e){
     if (e.target.tagName === "LI") {
@@ -23,3 +24,11 @@ listContainer.addEventListener("click", function(e){
         e.target.parentElement.remove();
     }
 }, false);
+
+function saveData() {
+    localStorage.setItem("data", listContainer.innerHTML); /* setItem is used to store data in the localStorage of the browser */ 
+}
+function showTask() {
+    listContainer.innerHTML = localStorage.getItem("data"); /* getItem is used to retrieve data from the localStorage of the browser */
+}
+showTask();
